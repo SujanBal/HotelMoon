@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="hostdashboard.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>UniTas Accomodation Booking System</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="addressbar">
+					<li>
+						<span> <i class="fas fa-phone-alt"></i> 0123456789</span>
+					</li>
+					<li>
+						<span
+							><i class="fas fa-map-marker-alt"></i> UniTas Pvt. Ltd.,
+							Tasmania</span
+						>
+					</li>
+					<li>
+						<span><a href="#">My Account</a></span>
+					</li>
+				</div>
+				<nav class="navbar">
+					<h1 class="navbar-logo"><span>Unitas </span>Accomodation</h1>
+					<ul class="navbar-menu">
+						<li class="navbar-menu-item"><span>Host Dashboard</span></li>
+					</ul>
+					<div class="togglemenu">
+						<i class="fas fa-times"></i>
+						<i class="fas fa-bars"></i>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="accomodations">
+			<div class="container">
+                <h1>My Accomodations List</h1>
+                <div class="search">
+                    <input type='text' placeholder="Search accomodations"/>
+                    <div class="searchby">
+                        <label for="accomodations-search">Search By: &nbsp;</label>
+                        <select name="accomodations-search" id="accomodations-search">
+                            <option value="date">Date</option>
+                            <option value="name">Name</option>
+                            <option value="location">Location</option>
+                            <option value="category">Category</option>
+                        </select>
+                    </div>
+                </div>
+				<h3>Showing all 5 results</h3>
+				<div class="main">
+					<div class="accomodations-item">
+						<div class="accomodations-item-image">
+							<img
+								src="./images/add.png"
+								alt="accomodations-1"
+								class="item-image add-image"
+							/>
+                            <p class="add-title">Add New Accomodation</p>
+						</div>
+					</div>
+
+					<div class="accomodations-item">
+						<div class="accomodations-item-image">
+							<div class="accomodations-item-image-hover">
+								<a href="pages.html">View Detail</a>
+							</div>
+							<img
+								src="./images/accomodations-1.jpeg"
+								alt="accomodations-1"
+								class="item-image"
+							/>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+						<div class="accomodations-item-info">
+							<div class="accomodations-item-title">
+								<h1>Anchorrage to Santiago</h1>
+								<span>$42.00</span>
+							</div>
+
+							<p>
+								Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+								luctus
+							</p>
+							<div class="accomodations-item-detail">
+								<button class="edit">Edit</button>
+								<button class="del">Delete</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="accomodations-item">
+						<div class="accomodations-item-image">
+							<div class="accomodations-item-image-hover">
+								<a href="pages.html">View Detail</a>
+							</div>
+							<img
+								src="./images/accomodations-2.jpeg"
+								alt="accomodations-2"
+								class="item-image"
+							/>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+						<div class="accomodations-item-info">
+							<div class="accomodations-item-title">
+								<h1>Banff to Anchorage</h1>
+								<span>$105.00</span>
+							</div>
+
+							<p>
+								Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+								luctus
+							</p>
+							<div class="accomodations-item-detail">
+								<button class="edit">Edit</button>
+								<button class="del">Delete</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="accomodations-item">
+						<div class="accomodations-item-image">
+							<div class="accomodations-item-image-hover">
+								<a href="pages.html">View Detail</a>
+							</div>
+							<img
+								src="./images/accomodations-3.jpeg"
+								alt="accomodations-3"
+								class="item-image"
+							/>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+						<div class="accomodations-item-info">
+							<div class="accomodations-item-title">
+								<h1>Classic Room</h1>
+								<span>$93.00</span>
+							</div>
+
+							<p>
+								Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+								luctus
+							</p>
+							<div class="accomodations-item-detail">
+								<button class="edit">Edit</button>
+								<button class="del">Delete</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="accomodations-item">
+						<div class="accomodations-item-image">
+							<div class="accomodations-item-image-hover">
+								<a href="pages.html">View Detail</a>
+							</div>
+							<img
+								src="./images/accomodations-4.jpeg"
+								alt="accomodations-4"
+								class="item-image"
+							/>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</div>
+						<div class="accomodations-item-info">
+							<div class="accomodations-item-title">
+								<h1>Days Ranges Pricing</h1>
+								<span>$345.00</span>
+							</div>
+
+							<p>
+								Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+								luctus
+							</p>
+							<div class="accomodations-item-detail">
+								<button class="edit">Edit</button>
+								<button class="del">Delete</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="accomodations-item">
+						<div class="accomodations-item-image">
+							<div class="accomodations-item-image-hover">
+								<a href="pages.html">View Detail</a>
+							</div>
+							<img
+								src="./images/accomodations-5.jpeg"
+								alt="accomodations-5"
+								class="item-image"
+							/>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+						<div class="accomodations-item-info">
+							<div class="accomodations-item-title">
+								<h1>Regan View</h1>
+								<span>$90.00</span>
+							</div>
+
+							<p>
+								Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+								luctus
+							</p>
+							<div class="accomodations-item-detail">
+								<button class="edit">Edit</button>
+								<button class="del">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+
+		<!-- footer -->
+
+		<footer>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright &copy; 2021 UniTas Pvt.Ltd. All Rights Reserved.</p>
+					<p>
+						Terms of Use | Privacy Policy |
+						<span
+							><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i
+							><i class="fab fa-instagram"></i
+						></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="admindashboard.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>UniTas Accomodation Booking System</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="addressbar">
+					<li>
+						<span> <i class="fas fa-phone-alt"></i> 0123456789</span>
+					</li>
+					<li>
+						<span
+							><i class="fas fa-map-marker-alt"></i> UniTas Pvt. Ltd.,
+							Tasmania</span
+						>
+					</li>
+					<li>
+						<span><a href="#">My Account</a></span>
+					</li>
+				</div>
+				<nav class="navbar">
+					<h1 class="navbar-logo"><span>Unitas </span>Accomodation</h1>
+					<ul class="navbar-menu">
+						<li class="navbar-menu-item"><span>Admin</span></li>
+					</ul>
+					<div class="togglemenu">
+						<i class="fas fa-times"></i>
+						<i class="fas fa-bars"></i>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="accomodations">
+			<div class="container">
+				<h1>My Dashboard</h1>
+
+                <div class="dashboard-container">
+                    <div class="dashboard-container-buttons">
+                        <button class="user-button">Users</button>
+                        <button class="accomodation-button">Accomodations</button>
+                        <button class="review-button">Reviews</button>
+                    </div>
+                    <div class="informations">
+                        <div class="users-container useropen">
+                            <div class="user-registration">
+                                <button>Add New</button>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                                
+                            </div>
+                            <table id="users">
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>User Type</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Alfreds Futterkiste</td>
+                                    <td>Kathmandu</td>
+                                    <td>Normal</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Berglunds snabbköp</td>
+                                    <td>Tasmania</td>
+                                    <td>Normal</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Centro comercial Moctezuma</td>
+                                    <td>New York</td>
+                                    <td>Host</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Ernst Handel</td>
+                                    <td>California</td>
+                                    <td>Host</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Island Trading</td>
+                                    <td>Sandey Bay</td>
+                                    <td>Normal</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Königlich Essen</td>
+                                    <td>Swoyambhur</td>
+                                    <td>Host</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Laughing Bacchus Winecellars</td>
+                                    <td>Ratnapark</td>
+                                    <td>Host</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Magazzini Alimentari Riuniti</td>
+                                    <td>Lumbini</td>
+                                    <td>Normal</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>North/South</td>
+                                    <td>Chabahil</td>
+                                    <td>Normal</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Paris spécialités</td>
+                                    <td>Okhaldhunga</td>
+                                    <td>Normal</td>
+                                </tr>
+                                
+                            </table>
+
+
+                        </div>
+
+                <!-- accomodations -->
+                        <div class="admin-accomodations">
+                            <div class="search">
+                                <input type="text" placeholder="Search accomodations" />
+                                <div class="searchby">
+                                    <label for="accomodations-search">Search By: &nbsp;</label>
+                                    <select name="accomodations-search" id="accomodations-search">
+                                        <option value="date">Date</option>
+                                        <option value="name">Name</option>
+                                        <option value="location">Location</option>
+                                        <option value="category">Category</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h3>Showing all 5 results</h3>
+                            <div class="main">
+                                <div class="accomodations-item">
+                                    <div class="accomodations-item-image">
+                                        <img
+                                            src="./images/add.png"
+                                            alt="accomodations-1"
+                                            class="item-image add-image"
+                                        />
+                                        <p class="add-title">Add New Accomodation</p>
+                                    </div>
+                                </div>
+
+                                <div class="accomodations-item">
+                                    <div class="accomodations-item-image">
+                                        <div class="accomodations-item-image-hover">
+                                            <a href="pages.html">View Detail</a>
+                                        </div>
+                                        <img
+                                            src="./images/accomodations-1.jpeg"
+                                            alt="accomodations-1"
+                                            class="item-image"
+                                        />
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accomodations-item-info">
+                                        <div class="accomodations-item-title">
+                                            <h1>Anchorrage to Santiago</h1>
+                                            <span>$42.00</span>
+                                        </div>
+
+                                        <p>
+                                            Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+                                            luctus
+                                        </p>
+                                        <div class="accomodations-item-detail">
+                                            <button class="edit">Edit</button>
+                                            <button class="del">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accomodations-item">
+                                    <div class="accomodations-item-image">
+                                        <div class="accomodations-item-image-hover">
+                                            <a href="pages.html">View Detail</a>
+                                        </div>
+                                        <img
+                                            src="./images/accomodations-2.jpeg"
+                                            alt="accomodations-2"
+                                            class="item-image"
+                                        />
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accomodations-item-info">
+                                        <div class="accomodations-item-title">
+                                            <h1>Banff to Anchorage</h1>
+                                            <span>$105.00</span>
+                                        </div>
+
+                                        <p>
+                                            Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+                                            luctus
+                                        </p>
+                                        <div class="accomodations-item-detail">
+                                            <button class="edit">Edit</button>
+                                            <button class="del">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accomodations-item">
+                                    <div class="accomodations-item-image">
+                                        <div class="accomodations-item-image-hover">
+                                            <a href="pages.html">View Detail</a>
+                                        </div>
+                                        <img
+                                            src="./images/accomodations-3.jpeg"
+                                            alt="accomodations-3"
+                                            class="item-image"
+                                        />
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accomodations-item-info">
+                                        <div class="accomodations-item-title">
+                                            <h1>Classic Room</h1>
+                                            <span>$93.00</span>
+                                        </div>
+
+                                        <p>
+                                            Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+                                            luctus
+                                        </p>
+                                        <div class="accomodations-item-detail">
+                                            <button class="edit">Edit</button>
+                                            <button class="del">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accomodations-item">
+                                    <div class="accomodations-item-image">
+                                        <div class="accomodations-item-image-hover">
+                                            <a href="pages.html">View Detail</a>
+                                        </div>
+                                        <img
+                                            src="./images/accomodations-4.jpeg"
+                                            alt="accomodations-4"
+                                            class="item-image"
+                                        />
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accomodations-item-info">
+                                        <div class="accomodations-item-title">
+                                            <h1>Days Ranges Pricing</h1>
+                                            <span>$345.00</span>
+                                        </div>
+
+                                        <p>
+                                            Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+                                            luctus
+                                        </p>
+                                        <div class="accomodations-item-detail">
+                                            <button class="edit">Edit</button>
+                                            <button class="del">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accomodations-item">
+                                    <div class="accomodations-item-image">
+                                        <div class="accomodations-item-image-hover">
+                                            <a href="pages.html">View Detail</a>
+                                        </div>
+                                        <img
+                                            src="./images/accomodations-5.jpeg"
+                                            alt="accomodations-5"
+                                            class="item-image"
+                                        />
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accomodations-item-info">
+                                        <div class="accomodations-item-title">
+                                            <h1>Regan View</h1>
+                                            <span>$90.00</span>
+                                        </div>
+
+                                        <p>
+                                            Aliquam lacus nisl, viverra convallis sit amet penatibus nunc
+                                            luctus
+                                        </p>
+                                        <div class="accomodations-item-detail">
+                                            <button class="edit">Edit</button>
+                                            <button class="del">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- accomodations ends -->
+
+                        <!-- reviews -->
+                        <div class="reviews">
+                            <h1>Anchorage to Santiago</h1>
+
+                            <div class="ratingsearch">
+                                <div class="ratingsearchstar">  
+                                        <span>4.0</span>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                </div>
+                               
+                                <div class="sortreviews">
+                                    <label for="reviewsort">Sort By: &nbsp;</label>
+                                    <select name="reviewsort" id="reviewsort">
+                                        <option value="date">Most Recent</option>
+                                        <option value="name">Most Popular</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="review-details">
+                                <div class="profile-icon">CS</div>
+                                <div class="eachreview">
+                                    <h5>Cindy Shelton</h5>
+                                    <div class="eachreview-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>1 months ago</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Dolorum molestias dignissimos laborum tempore blanditiis. Reprehenderit
+                                     culpa neque eum repellendus quo!</p>
+                                    <button>Remove</button>
+                                </div>
+                            </div>
+
+
+                            <div class="review-details">
+                                <div class="profile-icon second">SB</div>
+                                <div class="eachreview">
+                                    <h5>Sprince Balon</h5>
+                                    <div class="eachreview-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>2 months ago</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Dolorum molestias dignissimos laborum tempore blanditiis. Reprehenderit
+                                     culpa neque eum repellendus quo!</p>
+                                    <button>Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="review-details">
+                                <div class="profile-icon third">SS</div>
+                                <div class="eachreview">
+                                    <h5>Sushil Shrestha</h5>
+                                    <div class="eachreview-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>3 months ago</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Dolorum molestias dignissimos laborum tempore blanditiis. Reprehenderit
+                                     culpa neque eum repellendus quo!</p>
+                                    <button>Remove</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+		-->
+
+		<!-- footer -->
+
+		<footer>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright &copy; 2021 UniTas Pvt.Ltd. All Rights Reserved.</p>
+					<p>
+						Terms of Use | Privacy Policy |
+						<span
+							><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i
+							><i class="fab fa-instagram"></i
+						></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
