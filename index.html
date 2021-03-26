@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>UniTas Accomodation Booking System</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="addressbar">
+					<li>
+						<span> <i class="fas fa-phone-alt"></i> 0123456789</span>
+					</li>
+					<li>
+						<span
+							><i class="fas fa-map-marker-alt"></i> UniTas Pvt. Ltd.,
+							Tasmania</span
+						>
+					</li>
+					<li>
+						<span><a href="login.html">Sign Up | Login</a></span>
+					</li>
+				</div>
+				<nav class="navbar">
+					<h1 class="navbar-logo"><span>Unitas </span>Accomodation</h1>
+					<ul class="navbar-menu">
+						<li class="navbar-menu-item">
+							<a href="/" class="active">Home</a>
+						</li>
+						<li class="navbar-menu-item">
+							<a href="accomodations.html">Accomodations</a>
+						</li>
+						<li class="navbar-menu-item"><a href="pages.html">Pages</a></li>
+						<li class="navbar-menu-item"><a href="admindashboard.html">Admin</a></li>
+						<li class="navbar-menu-item">
+							<a href="hostdashboard.html">Host</a>
+						</li>
+					</ul>
+					<div class="togglemenu">
+						<i class="fas fa-times"></i>
+						<i class="fas fa-bars"></i>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- header ends here -->
+
+		<!-- hero section -->
+
+		<section class="home-hero">
+			<div class="container">
+				<div class='home-hero-info'>
+					<h1>The Easiest Way to Get Rooms You Are Interested</h1>
+					<h5>Find rooms, book room online and payment with more options.</h5>
+					<form action="" onsubmit="checkform()">
+						<div class="inputss">
+							<div class="input-container">
+								<div class="eachinput checkinandout">
+									<label for="checkIn">Check In</label><br/>
+									<input id='checkIn' type='date' required/>
+								</div>
+								<div class="eachinput checkinandout">
+									<label for="checkOut">Check Out</label><br/>
+									<input id='checkOut' type='date' required>
+								</div>
+							</div>
+							<div class="input-container">
+								<div class="eachinput locationandguests">
+									<label for="location">Location</label><br/>
+									<input id='location' type='text' placeholder="e.g. Sandy Bay" required/>
+								</div>
+								<div class="eachinput locationandguests">
+									<label for="guests">Guests</label><br/>
+									<input id='guests' type='number' step="1" min="0" required/>
+								</div>
+							</div>
+						</div>
+						<button type="submit" id="checkavailability">Check Availability</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- hero section ends -->
+
+		<!-- choose us section -->
+
+		<section class="chooseus">
+			<div class="container">
+				<h1>Why Choose Us?</h1>
+				<div class="facilities">
+					<div class="facility">
+						<div class="facility-image">
+							<img src="./images/facility-1.png" alt='facility-1' />
+						</div>
+						<h2>Diverse Destinations</h2>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</P>						
+					</div>
+
+					<div class="facility">
+						<div class="facility-image">
+							<img src="./images/facility-2.png" alt='facility-1' />
+						</div>
+						<h2>Value for Money</h2>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</P>						
+					</div>
+
+					<div class="facility">
+						<div class="facility-image">
+							<img src="./images/facility-3.png" alt='facility-1' />
+						</div>
+						<h2>Beautiful Places</h2>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</P>
+					</div>
+
+					<div class="facility">
+						<div class="facility-image">
+							<img src="./images/facility-4.png" alt='facility-1' />
+						</div>
+						<h2>Passionate Room</h2>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</P>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+
+		<footer>
+			<div class="container">
+				<div class="newsletter">
+					<h5>To receive our best monthly deals</h5>
+					<h1>Join The Newsletter</h1>
+					<div class="input">
+						<input type="email" placeholder="Email Address" />
+						<button>Sign up Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright &copy; 2021 UniTas Pvt.Ltd. All Rights Reserved.</p>
+					<p>
+						Terms of Use | Privacy Policy |
+						<span
+							><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i
+							><i class="fab fa-instagram"></i
+						></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script type = "text/javascript" src="script.js"></script>
+	</body>
+</html>

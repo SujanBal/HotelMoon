@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>UniTas Accomodation Booking System</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="addressbar">
+					<li>
+						<span> <i class="fas fa-phone-alt"></i> 0123456789</span>
+					</li>
+					<li>
+						<span
+							><i class="fas fa-map-marker-alt"></i> UniTas Pvt. Ltd.,
+							Tasmania</span
+						>
+					</li>
+					<li>
+						<span><a href="login.html">Sign Up | Login</a></span>
+					</li>
+				</div>
+				<nav class="navbar">
+					<h1 class="navbar-logo"><span>Unitas </span>Accomodation</h1>
+					<ul class="navbar-menu">
+						<li class="navbar-menu-item">
+							<a href="/">Home</a>
+						</li>
+						<li class="navbar-menu-item">
+							<a href="accomodations.html">Accomodations</a>
+						</li>
+						<li class="navbar-menu-item">
+							<a href="pages.html" class="active">Pages</a>
+						</li>
+						<li class="navbar-menu-item"><a href="admindashboard.html">Admin</a></li>
+						<li class="navbar-menu-item">
+							<a href="hostdashboard.html">Host</a>
+						</li>
+					</ul>
+					<div class="togglemenu">
+						<i class="fas fa-times"></i>
+						<i class="fas fa-bars"></i>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- header ends here -->
+
+		<!-- hero section -->
+		<section class="hero pages">
+			<div class="container">
+				<div class="hero-info ">
+					<div class="text">
+						<a href="/">Home</a><i class="fal fa-angle-right"></i
+						><span>Login</span>
+					</div>
+					<h1>Login</h1>
+				</div>
+			</div>
+		</section>
+
+		<!-- hero section ends -->
+
+		<!-- login section  -->
+
+		<section class="login">
+			<div class="container">
+                <div class="login-details">
+                    <h5>Dont have an account? <span><a href='signup.html'>Click Here To SignUp.</a></span></h5>
+                    <form action="" method="POST">
+                        <p>Login to get the your accomodation booked.</p>
+                        <div class="logintype">
+                            <label for="hostcheckbox"> Login as Host</label>
+                            <input type="checkbox" id="hostcheckbox" name="hostcheckbox" value="yes">
+                        </div>
+                        <div class="input">
+                            <div class="login-input username">
+                                <label for="username">Username or email <span>*</span></label><br/>
+                                <input type="text" name="username" id="username" required>
+                            </div>
+                            <div class="login-input password">
+                                <label for="password">Password <span>*</span></label><br/>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                        </div>
+                        
+                        <div class="loginbutton">
+                            <button>Login</button>
+                            <div class="rememberme">
+                                <input type="checkbox" id="rememberme" name="rememberme" value="yes">
+                                <label for="rememberme"> Remember Me</label><br>
+                            </div>
+                        </div>
+                        <p><a href='signup.html'>Lost your password?</a></p>
+                    </form>
+                </div>
+            </div>
+		</section>
+        <!-- login section ends -->
+
+		<!-- footer -->
+
+		<footer>
+			<div class="container">
+				<div class="newsletter">
+					<h5>To receive our best monthly deals</h5>
+					<h1>Join The Newsletter</h1>
+					<div class="input">
+						<input type="email" placeholder="Email Address" />
+						<button>Sign up Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright &copy; 2021 UniTas Pvt.Ltd. All Rights Reserved.</p>
+					<p>
+						Terms of Use | Privacy Policy |
+						<span
+							><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i
+							><i class="fab fa-instagram"></i
+						></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script type = "text/javascript" src="script.js"></script>
+	</body>
+</html>
