@@ -59,18 +59,24 @@ accomodationbutton.addEventListener("click", function () {
 	user.classList.remove("useropen");
 });
 
-// if (user.classList.contains("useropen")) {
-// 	userbutton.style.backgroundColor = "#ffb300";
-// } else {
-// 	userbutton.style.backgroundColor = "none";
-// }
-// if (reviews.classList.contains("reviewsopen")) {
-// 	reviewbutton.style.backgroundColor = "#ffb300";
-// } else {
-// 	reviewbutton.style.backgroundColor = "none";
-// }
-// if (accomodations.classList.contains("accomodationopen")) {
-// 	accomodationbutton.style.backgroundColor = "#ffb300";
-// } else {
-// 	accomodationbutton.style.backgroundColor = "none";
-// }
+let accomodationclass = document.getElementsByClassName(".accomodationopen");
+let reviewclass = document.getElementsByClassName(".reviewsopen");
+console.log(user.classList.contains("useropen"));
+console.log(accomodations.classList.contains("accomodationopen"));
+console.log(accomodationclass);
+console.log(reviewclass);
+if (user.classList.contains("useropen")) {
+	userbutton.style.backgroundColor = "#ffb300";
+} else {
+	userbutton.style.backgroundColor = "none";
+}
+if (!!accomodationclass) {
+	reviewbutton.style.backgroundColor = "#ffb300";
+} else {
+	reviewbutton.style.backgroundColor = "none";
+}
+if (!!reviewclass) {
+	accomodationbutton.style.backgroundColor = "#ffb300";
+} else {
+	accomodationbutton.style.backgroundColor = "none";
+}

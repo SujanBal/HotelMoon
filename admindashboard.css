@@ -216,6 +216,11 @@ header {
 	margin: 4rem 0;
 	display: flex;
 }
+@media screen and (max-width: 700px) {
+	.dashboard-container {
+		flex-direction: column;
+	}
+}
 
 /* ---------------------------------
        		Users Styles
@@ -249,6 +254,11 @@ header {
 .informations {
 	width: 100%;
 	padding: 3rem;
+}
+@media screen and (max-width: 700px) {
+	.informations {
+		padding: 3rem 1rem;
+	}
 }
 
 .users-container {
@@ -527,6 +537,18 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+}
+@media screen and (max-width: 500px) {
+	.ratingsearch {
+		flex-direction: column;
+	}
+	.ratingsearchstar {
+		align-self: flex-start;
+		margin-bottom: 2rem;
+	}
+	.sortreviews {
+		align-self: flex-start;
+	}
 }
 .ratingsearchstar span {
 	font-size: 2.4rem;
